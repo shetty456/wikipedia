@@ -1,0 +1,13 @@
+{% extends "encyclopedia/layout.html" %}
+{% block title %}
+Searched
+{% endblock %}
+
+{% block body %}
+<h1>Similar Results</h1>
+<ul>
+    {% for item in searched %}
+    <li><a href="{{item}}">{{ item }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}

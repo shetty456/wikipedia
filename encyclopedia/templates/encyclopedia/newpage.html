@@ -1,0 +1,11 @@
+{% extends "encyclopedia/layout.html" %}
+{% block title %}
+Newpage
+{% endblock %}
+{% block body %}
+<form action="{% url 'newpage' %}" method="get">
+    <h6>{{ newpage.title }}</h6>
+    {{ newpage.content }}
+    <input type="submit" value="submit">
+</form>
+{% endblock %}
